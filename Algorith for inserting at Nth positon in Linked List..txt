@@ -1,0 +1,60 @@
+Algorithm for inserting at Nth positon in Linked List.
+
+Algo: define function insertATNPosition(pos , data , head, tail)
+step 1 : Create newNode with DATA = data
+step 2 : create Pointer curr
+step 3 : check IF (head  = NULL)
+            head = newNode
+            tail = newNode
+            return
+         END IF
+step 4 : check IF pos = 1
+            newNode->next = head
+            head = newNode
+            return
+         END IF
+Step 5 : ELSE
+            Set i = 1 , Repet WHILE i < pos - 1
+                IF( curr = NULL ) 
+                    Print 'Invalid position'
+                    return
+                END IF
+                curr = curr->next
+            END WHILE
+            IF curr->next = NULL
+                tail->next = newNode
+                tail = newNode
+                return
+            END IF
+            ELSE
+                newNode-> curr->next
+                curr->next = newNode
+            END ELSE
+         END ELSE
+END of fundtion insertATNPosition
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algorithm: Insertion at Specific Position in Linked List
+
+Step 1: [INITIALIZE] SET PTR = HEAD, SET COUNT = 1
+Step 2: Create NEWNODE and SET NEWNODE → DATA = ITEM
+Step 3: IF POSITION = 1 THEN
+        SET NEWNODE → NEXT = HEAD
+        SET HEAD = NEWNODE
+        GOTO Step 8
+Step 4: Repeat Step 5 while (COUNT < POSITION - 1) and (PTR ≠ NULL)
+Step 5: SET PTR = PTR → NEXT, INCREMENT COUNT = COUNT + 1
+Step 6: SET NEWNODE → NEXT = PTR → NEXT
+Step 7: SET PTR → NEXT = NEWNODE
+Step 8: EXIT
