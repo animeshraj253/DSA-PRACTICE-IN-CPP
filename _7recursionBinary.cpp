@@ -14,9 +14,18 @@ bool isSorted(int *arr , int size){
     
 }
 
+int linerSearch(int *arr, int size, int key ){
+    if ( size == 0 ){
+        return false;
+    }
+
+    
+}
+
 int main(){
     int arr[] = {1,2,3,4,5,6,7,8,9,10};
-
+    int size = 10;
+    int key = 6;
     if(isSorted(arr,10)){
         cout<<"True"<<endl;
     }else{
