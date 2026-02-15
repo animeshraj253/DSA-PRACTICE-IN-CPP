@@ -74,6 +74,5 @@ int main(){
     cout<<"IS PRESENT = " << present << endl<< endl;
 
 
-
     return 0;
 }

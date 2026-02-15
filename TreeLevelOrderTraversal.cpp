@@ -49,6 +49,7 @@ void levelOrderTraversal(node *root){
         q.pop();
         
         if(temp == NULL){
+            // level seprator
             cout<<endl;
             if(!q.empty()){
                 q.push(NULL);
@@ -61,7 +62,7 @@ void levelOrderTraversal(node *root){
             }
             if(temp->right){
                 q.push(temp->right);
-            }
+            } 
         }
     }
 }
@@ -97,6 +98,7 @@ void postorder(node *root){
 
 int main(){
     // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+    // 1 4 5 6 -1 -1 7 -1 -1 8 -1 -1 2 9 -1 10 -1 -1 11 -1 -1
     node *root = NULL;
     
     root = buildTree(root);
